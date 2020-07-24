@@ -1,6 +1,6 @@
 window.addEventListener("load", function() {
   
-  mapboxgl.accessToken = 'pk.eyJ1IjoiamFtaWFuZGVyIiwiYSI6ImNrY3BnMDd1NDBjZHcycm0xanE3eTN1eTIifQ.tFjkEX9kJWXQawtE7Ti9Cw';
+  mapboxgl.accessToken = 'ADDTOKENHERE';
   var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/jamiander/ckcqo45ht02j91imjgie6lzok',

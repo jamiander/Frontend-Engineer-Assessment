@@ -1,6 +1,6 @@
 window.addEventListener("load", function() {
   
-  mapboxgl.accessToken = 'ADDTOKENHERE';
+  mapboxgl.accessToken = 'pk.eyJ1IjoiamFtaWFuZGVyIiwiYSI6ImNrY3BnMDd1NDBjZHcycm0xanE3eTN1eTIifQ.tFjkEX9kJWXQawtE7Ti9Cw';
   var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/jamiander/ckcqo45ht02j91imjgie6lzok',
@@ -108,102 +108,5 @@ Highcharts.chart(chart, {
 }
 });
 
-
-
-/*var json2 = (function() {
-  var json2 = null;
-  $.ajax({
-    'async': false,
-    'global': false,
-    'url': "https://raw.githubusercontent.com/jamiander/interview/master/frontend-engineer/kc-tracts.json",
-    'dataType': "json",
-    'success': function(data) {
-      json2 = data;
-    }
-  });
-  return json2;
-})();
-
-var jsonLen = Object.keys(json2.features).length;
-var tractIds = new Array();
-var tractDaData = new Array();
-var tractDcData = new Array();
-var tractPtData = new Array();
-var tractWData = new Array();
-
-for (var i = 0; i < jsonLen; i++) {
-  tractIds.push(json2.features[i].properties.id);
-  tractDaData.push(json2.features[i].properties['pop-commute-drive_alone']);
-  tractDcData.push(json2.features[i].properties['pop-commute-drive_carpool']);
-  tractPtData.push(json2.features[i].properties['pop-commute-public_transit']);
-  tractWData.push(json2.features[i].properties['pop-commute-walk']);
-}
-
-
-
-//create charts
-Highcharts.chart('chart', {
-  chart: {
-     type: 'column'
-   },
-   title: {
-    text: 'Commuter Data by Neighborhood'
-},
-   plotOptions: {
-     series: {
-       stacking: 'normal'
-     }
-   },
-   xAxis: {
-     categories: nhIds
-   },
-   series: [
-     {name: 'Drive-Alone',
-     data: daData
-     },
-     {name: 'Drive-Carpool',
-     data: dcData
-     },
-     {name: 'Public-Transit',
-     data: ptData
-     },
-     {name: 'Walk',
-     data: wData
-     }
-   ]
-
- })
-
-
-Highcharts.chart('chartB', {
-chart: {
-    type: 'column'
-  },
-  plotOptions: {
-    series: {
-      stacking: 'normal'
-    }
-  },
-  xAxis: {
-    categories: tractIds
-  },
-  series: [
-    {name: 'Drive-Alone',
-    data: tractDaData
-    },
-    {name: 'Drive-Carpool',
-    data: tractDcData,
-    },
-    {name: 'Public-Transit',
-    data: tractPtData,
-    },
-    {name: 'Walk',
-    data: tractWData,
-    }
-  ]
-
- })*/
-
- 
 
 
